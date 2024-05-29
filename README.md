@@ -3,6 +3,5 @@
 I built it using python and tkinter for the GUI. It uses EUI version 1.29i.
 To use it just unpack the zip and run the .exe file.
 
-NOTE:
-- Windows defender may be triggered so I suggest turning it off before unpacking the zip.
+_NOTE: Windows defender may be triggered so I suggest turning it off before unpacking the zip._
 
