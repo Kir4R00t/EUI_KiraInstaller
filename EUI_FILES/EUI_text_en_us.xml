@@ -1,0 +1,635 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with notepad++ by bc1 -->
+<GameData>
+	<Language_en_US>
+<!-- UNIT attributes -->
+		<Replace Tag="TXT_KEY_EUI_UNIT_CAPTURE">
+			<Text>Can be captured</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_MOVEAFTERPURCHASE">
+			<Text>May move immediately after purchase</Text>
+		</Replace>
+		<!-- <Replace Tag="TXT_KEY_EUI_UNIT_IMMOBILE"> -->
+			<!-- <Text>Immobile</Text> -->
+		<!-- </Replace> -->
+		<Replace Tag="TXT_KEY_EUI_UNIT_FOOD">
+			<Text>City [ICON_FOOD] Growth stops while being built</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_NOBADGOODIES">
+			<Text>No bad effect from ancient ruins</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_RIVALTERRITORY">
+			<Text>Can enter rival territory</Text>
+		</Replace>
+		<!-- <Replace Tag="TXT_KEY_EUI_UNIT_MILITARYSUPPORT"> -->
+			<!-- <Text>Military Support</Text> -->
+		<!-- </Replace> -->
+		<!-- <Replace Tag="TXT_KEY_EUI_UNIT_MILITARYPRODUCTION"> -->
+			<!-- <Text>Military Production</Text> -->
+		<!-- </Replace> -->
+		<Replace Tag="TXT_KEY_EUI_UNIT_PILLAGE">
+			<Text>Can pillage improved tiles</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_FOUND">
+			<Text>Can found a new city to expand your empire</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_FOUNDABROAD">
+			<Text>Can found a new city overseas to expand your empire</Text>
+		</Replace>
+		<!-- <Replace Tag="TXT_KEY_EUI_UNIT_IGNOREBUILDINGDEFENSE"> -->
+			<!-- <Text>Ignores City Fortifications</Text> -->
+		<!-- </Replace> -->
+		<!-- <Replace Tag="TXT_KEY_EUI_UNIT_MECHANIZED"> -->
+			<!-- <Text>Mechanized</Text> -->
+		<!-- </Replace> -->
+		<Replace Tag="TXT_KEY_EUI_UNIT_SUICIDE">
+			<Text>Consumed during attack</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_CAPTUREWHILEEMBARKED">
+			<Text>Can be captured while embarked</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_RUSHBUILDING">
+			<Text>{TXT_KEY_MISSION_HURRY_PRODUCTION}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_SPREADRELIGION">
+			<Text>{TXT_KEY_MISSION_SPREAD_RELIGION}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_REMOVEHERESY">
+			<Text>{TXT_KEY_MISSION_REMOVE_HERESY}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_FOUNDRELIGION">
+			<Text>{TXT_KEY_MISSION_FOUND_RELIGION}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_REQUIRESENHANCEDRELIGION">
+			<Text>Requires enhanced religion</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_PROHIBITSSPREAD">
+			<Text>Prohibits religion spread</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_CANBUYCITYSTATE">
+			<Text>{TXT_KEY_MISSION_BUY_CITY_STATE}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_RANGEATTACKONLYINDOMAIN">
+			<Text>Can range attack only same-domain units</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_RANGEATTACKIGNORELOS">
+			<Text>{TXT_KEY_PROMOTION_INDIRECT_FIRE}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_TRADE">
+			<Text>{TXT_KEY_MISSION_ESTABLISH_TRADE_ROUTE}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_NOMAINTENANCE">
+			<Text>No maintenance cost</Text>
+		</Replace>
+		<!-- <Replace Tag="TXT_KEY_EUI_UNIT_BASESIGHTRANGE"> -->
+			<!-- <Text>Base Sight Range {1}</Text> -->
+		<!-- </Replace> -->
+		<Replace Tag="TXT_KEY_EUI_UNIT_CULTUREBOMBRADIUS">
+			<Text>{TXT_KEY_MISSION_CULTURE_BOMB} ({1})</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_GOLDENAGETURNS">
+			<Text>{TXT_KEY_MISSION_START_GOLDENAGE} ({1} {TXT_KEY_TURNS})</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_FREEPOLICIES">
+			<Text>{TXT_KEY_MISSION_GIVE_POLICIES} ({1}x[ICON_CULTURE])</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_ONESHOTTOURISM">
+			<Text>{TXT_KEY_MISSION_ONE_SHOT_TOURISM} ({1}x[ICON_TOURISM])</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_ONESHOTTOURISMPERCENTOTHERS">
+			<Text>One Shot Tourism Percent Others {1}</Text>
+		</Replace>
+		<!-- <Replace Tag="TXT_KEY_EUI_UNIT_MINAREASIZE"> -->
+			<!-- <Text>Min Area Size {1}</Text> -->
+		<!-- </Replace> -->
+		<Replace Tag="TXT_KEY_EUI_UNIT_AIRINTERCEPTRANGE">
+			<Text>{TXT_KEY_MISSION_INTERCEPT} [ICON_RANGE_STRENGTH]{1}</Text>
+		</Replace>
+		<!-- <Replace Tag="TXT_KEY_EUI_UNIT_AIRUNITCAP"> -->
+			<!-- <Text>Air Unit Cap {1}</Text> -->
+		<!-- </Replace> -->
+		<!-- <Replace Tag="TXT_KEY_EUI_UNIT_NUKEDAMAGELEVEL"> -->
+			<!-- <Text>Nuke Damage Level {1}</Text> -->
+		<!-- </Replace> -->
+		<!-- <Replace Tag="TXT_KEY_EUI_UNIT_WORKRATE"> -->
+			<!-- <Text>Work Rate {1}</Text> -->
+		<!-- </Replace> -->
+		<Replace Tag="TXT_KEY_EUI_UNIT_NUMFREETECHS">
+			<Text>{TXT_KEY_MISSION_DISCOVER_TECH} ({1})</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_BASEBEAKERSTURNSTOCOUNT">
+			<Text>{TXT_KEY_MISSION_DISCOVER_TECH} ({1} {TXT_KEY_TURNS})</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_BASECULTURETURNSTOCOUNT">
+			<Text>{TXT_KEY_MISSION_GIVE_POLICIES} ({1} {TXT_KEY_TURNS})</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_RELIGIONSPREADS">
+			<Text>{TXT_KEY_UPANEL_SPREAD_RELIGION_USES}: {1}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_RELIGIOUSSTRENGTH">
+			<Text>Religious strength {1}</Text>
+		</Replace>
+		<!-- <Replace Tag="TXT_KEY_EUI_UNIT_COMBATLIMIT"> -->
+			<!-- <Text>Combat Limit {1}</Text> -->
+		<!-- </Replace> -->
+		<Replace Tag="TXT_KEY_EUI_UNIT_NUMEXOTICGOODS">
+			<Text>{TXT_KEY_MISSION_SELL_EXOTIC_GOODS}: {1}</Text>
+		</Replace>
+		<!-- <Replace Tag="TXT_KEY_EUI_UNIT_RANGEDCOMBATLIMIT"> -->
+			<!-- <Text>Ranged Combat Limit {1}</Text> -->
+		<!-- </Replace> -->
+		<!--Replace Tag="TXT_KEY_EUI_UNIT_CONSCRIPTION">
+			<Text>Conscription {1}</Text>
+		</Replace-->
+		<Replace Tag="TXT_KEY_EUI_UNIT_EXTRAMAINTENANCECOST">
+			<Text>{TXT_KEY_PEDIA_MAINT_LABEL} {1}[ICON_GOLD]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_UNHAPPINESS">
+			<Text>{TXT_KEY_UNHAPPINESS}: {1}[ICON_HAPPINESS_4]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_LEADEREXPERIENCE">
+			<Text>Leader Experience {1}</Text>
+		</Replace>
+
+<!-- BUILDING attributes -->
+		<Replace Tag="TXT_KEY_EUI_BUILDING_TEAMSHARE">
+			<Text>{TXT_KEY_POP_UN_TEAM}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_FOUNDSRELIGION">
+			<Text>{TXT_KEY_MISSION_FOUND_RELIGION}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_ISRELIGIOUS">
+			<Text>Religious building</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_BORDEROBSTACLE">
+			<Text>+1[ICON_MOVES] enemy unit movement cost within empire territory</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_PLAYERBORDEROBSTACLE">
+			<Text>+1[ICON_MOVES] enemy unit movement cost within empire territory</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_CAPITAL">
+			<Text>Makes the city the empire's [ICON_CAPITAL] Capital</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_GOLDENAGE">
+			<Text>Triggers an empire [ICON_GOLDEN_AGE] Golden Age</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_MAPCENTERING">
+			<Text>Map centering</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_NEVERCAPTURE">
+			<Text>Cannot be captured</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_NUKEIMMUNE">
+			<Text>Nuke immune</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_ALLOWSWATERROUTES">
+			<Text>[ICON_CONNECTED] Connects the city with the [ICON_CAPITAL] Capital over water</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_EXTRALUXURIES">
+			<Text>Provides an extra copy of each improved luxury resource near the city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_DIPLOMATICVOTING">
+			<Text>Triggers voting for the Diplomatic Victory</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_AFFECTSPIESNOW">
+			<Text>Affect Spies Now</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_NULLIFYINFLUENCEMODIFIER">
+			<Text>Negates the [ICON_TOURISM] Tourism bonus from other player's technology</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_UNLOCKEDBYLEAGUE">
+			<Text>May only be built collaboratively through the World Congress</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_HOLYCITY">
+			<Text>Must be built in a [COLOR_WHITE]Holy City[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_AIRLIFT">
+			<Text>Allows airlift to or from the city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_NOOCCUPIEDUNHAPPINESS">
+			<Text>Eliminates extra [ICON_HAPPINESS_4] Unhappiness from an [ICON_OCCUPIED] Occupied city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_ALLOWSRANGESTRIKE">
+			<Text>{TXT_KEY_PROMOTION_INDIRECT_FIRE_HELP}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_ESPIONAGE">
+			<Text>{TXT_KEY_GAME_CONCEPT_SECTION_22}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_ALLOWSFOODTRADEROUTES">
+			<Text>Allows domestic [ICON_FOOD] Food [ICON_INTERNATIONAL_TRADE] Trade Routes from the city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_ALLOWSPRODUCTIONTRADEROUTES">
+			<Text>Allows domestic [ICON_PRODUCTION] Production [ICON_INTERNATIONAL_TRADE] Trade Routes from the city</Text>
+		</Replace>
+		<!-- <Replace Tag="TXT_KEY_EUI_BUILDING_CITYWALL"> -->
+			<!-- <Text>City Wall</Text> -->
+		<!-- </Replace> -->
+		<Replace Tag="TXT_KEY_EUI_BUILDING_LEAGUECOST">
+			<Text>League Cost {1}[ICON_PRODUCTION]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_NUMCITYCOSTMOD">
+			<Text>Cost increases by {1}[ICON_PRODUCTION] Production per city in empire</Text>
+		</Replace>
+		<!-- <Replace Tag="TXT_KEY_EUI_BUILDING_MINAREASIZE"> -->
+			<!-- <Text>Min Area Size {1}</Text> -->
+		<!-- </Replace> -->
+		<Replace Tag="TXT_KEY_EUI_BUILDING_CONQUESTPROB">
+			<Text>{1}% capture chance</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_CITIESPREREQ">
+			<Text>Requires at least {1} cit{1: plural 1?y; 2?ies;}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_LEVELPREREQ">
+			<Text>Level Prereq {1}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_GLOBALCULTURERATEMODIFIER">
+			<Text>Increases global culture rate by {1}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_GREATPEOPLERATEMODIFIER">
+			<Text>+{1}%[ICON_GREAT_PEOPLE] {TXT_KEY_CITYVIEW_GREAT_PEOPLE_TEXT}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_GLOBALGREATPEOPLERATEMODIFIER">
+			<Text>Global Great People Rate Modifier {1}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_GREATGENERALRATEMODIFIER">
+			<Text>Great General Rate Modifier {1}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_GREATPERSONEXPENDGOLD">
+			<Text>Great Person Expend Gold {1}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_GOLDENAGEMODIFIER">
+			<Text>+{1}% {TXT_KEY_REPLAY_DATA_GOLDAGETURNS}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_UNITUPGRADECOSTMOD">
+			<Text>{1: number +0;-0} Gold cost for upgrading military units</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_EXPERIENCE">
+			<Text>Experience {1}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_GLOBALEXPERIENCE">
+			<Text>Global Experience {1}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_FOODKEPT">
+			<Text>{1}% of [ICON_FOOD] Food is carried over after a new [ICON_CITIZEN] Citizen is born (effect stacks)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_AIRMODIFIER">
+			<Text>Increases the air unit capacity of the city by {1}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_NUKEMODIFIER">
+			<Text>Reduces city population loss from nuclear attack by {1}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_NUKEEXPLOSIONRAND">
+			<Text>{1}% chance this building causes a big problem (meltdown) if the city is hit with a nuke</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_HEALRATECHANGE">
+			<Text>Improves unit heal rate by {1}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_UNHAPPINESSMODIFIER">
+			<Text>{1: number +0;-0}%[ICON_HAPPINESS_4] Unhappiness from [ICON_CITIZEN] Citizens in every non-occupied city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_HAPPINESSPERCITY">
+			<Text>{1: number +0;-0}[ICON_HAPPINESS_1] Happiness per city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_HAPPINESSPERXPOLICIES">
+			<Text>+1[ICON_HAPPINESS_1] Happiness for every {1} polic{1: plural 1?y; 2?ies;}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_CITYCOUNTUNHAPPINESSMOD">
+			<Text>{1: number +0;-0}%[ICON_HAPPINESS_4] Unhappiness from number of cities</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_WORKERSPEEDMODIFIER">
+			<Text>{1: number +0;-0}% worker constrution speed in empire</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_MILITARYPRODUCTIONMODIFIER">
+			<Text>{1: number +0;-0}%[ICON_PRODUCTION] when building a Military Unit in the city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_SPACEPRODUCTIONMODIFIER">
+			<Text>{1: number +0;-0}%[ICON_PRODUCTION] when building a Spaceship Part in the city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_GLOBALSPACEPRODUCTIONMODIFIER">
+			<Text>{1: number +0;-0}%[ICON_PRODUCTION] when building a Spaceship Part in any city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_BUILDINGPRODUCTIONMODIFIER">
+			<Text>{1: number +0;-0}%[ICON_PRODUCTION] when building a Building in the city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_WONDERPRODUCTIONMODIFIER">
+			<Text>{1: number +0;-0}%[ICON_PRODUCTION] when building a Wonder in the city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_CITYCONNECTIONTRADEROUTEMODIFIER">
+			<Text>{1: number +0;-0}%[ICON_GOLD] Gold from all city [ICON_CONNECTED] Connections</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_CAPTUREPLUNDERMODIFIER">
+			<Text>{1: number +0;-0}%[ICON_GOLD] Gold plunder when capturing the city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_POLICYCOSTMODIFIER">
+			<Text>{1: number +0;-0}%[ICON_CULTURE] Culture cost for new [COLOR_MAGENTA]Social Policies[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_PLOTCULTURECOSTMODIFIER">
+			<Text>{1: number +0;-0}%[ICON_CULTURE] Culture cost for new tiles in the city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_GLOBALPLOTCULTURECOSTMODIFIER">
+			<Text>{1: number +0;-0}%[ICON_CULTURE] Culture cost for new tiles in any city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_PLOTBUYCOSTMODIFIER">
+			<Text>{1: number +0;-0}%[ICON_GOLD] Gold cost for new tiles in the city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_GLOBALPLOTBUYCOSTMODIFIER">
+			<Text>{1: number +0;-0}%[ICON_GOLD] Gold cost for new tiles in every city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_GLOBALPOPULATIONCHANGE">
+			<Text>{1: number +0;-0}[ICON_CITIZEN] Citizen{1: plural 2?s;} to the population of every city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_TECHSHARE">
+			<Text>Provides [COLOR_CYAN]any technologies[ENDCOLOR] already known by {1} other player{1: plural 2?s;} for free</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_FREETECHS">
+			<Text>Provides [COLOR_CYAN]{1} Free Technolog{1: plural 1?y; 2?ies;}[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_FREEPOLICIES">
+			<Text>Provides [COLOR_MAGENTA]{1} Free Social Polic{1: plural 1?y; 2?ies;}[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_FREEGREATPEOPLE">
+			<Text>Provides [COLOR_UNIT_TEXT]{1} Free Great Pe{1: plural 1?rson; 2?{1}ople;}[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_MEDIANTECHPERCENTCHANGE">
+			<Text>Median Tech Percent Change {1}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_GOLD">
+			<Text>Gold {1}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_GLOBALDEFENSEMOD">
+			<Text>Global Defense Mod {1}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_MINORFRIENDSHIPCHANGE">
+			<Text>Minor Friendship Change {1}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_VICTORYPOINTS">
+			<Text>Provides [COLOR_GREEN]{1} Victory Point{1: plural  2?s;}[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_EXTRAMISSIONARYSPREADS">
+			<Text>{1: number +0;-0} extra missionary spreads</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_RELIGIOUSPRESSUREMODIFIER">
+			<Text>{1: number +0;-0}% to the city's religious pressure</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_ESPIONAGEMODIFIER">
+			<Text>{1: number +0;-0}% ennemy espionage in the city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_GLOBALESPIONAGEMODIFIER">
+			<Text>{1: number +0;-0}% ennemy espionage in all cities</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_EXTRASPIES">
+			<Text>Provides {1} extra sp{1: plural 1?y; 2?ies;} for empire</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_SPYRANKCHANGE">
+			<Text>Increases empire spy rank by {1}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_INSTANTSPYRANKCHANGE">
+			<Text>Instantly increases empire spy rank by {1}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_TRADEROUTERECIPIENTBONUS">
+			<Text>[ICON_INTERNATIONAL_TRADE]{TXT_KEY_DECLARE_WAR_TRADE_ROUTES_HEADER} +{1}[ICON_GOLD][ICON_ARROW_LEFT]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_TRADEROUTETARGETBONUS">
+			<Text>[ICON_INTERNATIONAL_TRADE]{TXT_KEY_DECLARE_WAR_TRADE_ROUTES_HEADER} +{1}[ICON_GOLD][ICON_ARROW_RIGHT]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_NUMTRADEROUTEBONUS">
+			<Text>{1: number +0;-0}[ICON_INTERNATIONAL_TRADE]{TXT_KEY_DECLARE_WAR_TRADE_ROUTES_HEADER}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_LANDMARKSTOURISMPERCENT">
+			<Text>Adds {1}% of the [ICON_CULTURE] Culture from World Wonders, Natural Wonders, and tile improvements to the [ICON_TOURISM] Tourism output of the city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_INSTANTMILITARYINCREASE">
+			<Text>Creates {1} cop{1: plural 1?y; 2?ies;} of each type of [COLOR_UNIT_TEXT]military land unit[ENDCOLOR] near city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_GREATWORKSTOURISMMODIFIER">
+			<Text>{1: number +0;-0}%[ICON_TOURISM] tourism output from Great Works in the city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_XBUILTTRIGGERSIDEOLOGYCHOICE">
+			<Text>Triggers empire ideology choice once {1: plural 2?{1} are ;}built</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_TRADEROUTESEADISTANCEMODIFIER">
+			<Text>{1: number +0;-0}% range for sea [ICON_INTERNATIONAL_TRADE] trade routes from the city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_TRADEROUTESEAGOLDBONUS">
+			<Text>{2: number +#.##;-#.##}[ICON_GOLD] Gold for international sea [ICON_INTERNATIONAL_TRADE] Trade Routes from the city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_TRADEROUTELANDDISTANCEMODIFIER">
+			<Text>{1: number +0;-0}% range for land [ICON_INTERNATIONAL_TRADE] Trade Routes from the city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_TRADEROUTELANDGOLDBONUS">
+			<Text>{2: number +#.##;-#.##}[ICON_GOLD] Gold for international land [ICON_INTERNATIONAL_TRADE] Trade Routes from the city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_CITYSTATETRADEROUTEPRODUCTIONMODIFIER">
+			<Text>{2: number +#.##;-#.##}[ICON_PRODUCTION] Production for [ICON_INTERNATIONAL_TRADE] Trade Routes from the city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_GREATSCIENTISTBEAKERMODIFIER">
+			<Text>{1: number +0;-0}%[ICON_RESEARCH] Science when expending [ICON_GREAT_SCIENTIST] Great Scientists to discover technology</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_SPECIALISTEXTRACULTURE">
+			<Text>{1: number +0;-0}[ICON_CULTURE] Culture per specialist in the city</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_EXTRALEAGUEVOTES">
+			<Text>{1: number +0;-0} World Congress vote{1: plural  2?s;}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_POLICYBRANCHTYPE">
+			<Text>[41]Requires [COLOR_MAGENTA]{1}[ENDCOLOR]</Text>
+		</Replace>
+		<!-- <Replace Tag="TXT_KEY_EUI_BUILDING_PREREQTECH"> -->
+			<!-- <Text>[42]Requires [COLOR_CYAN]{1}[ENDCOLOR]</Text> -->
+		<!-- </Replace> -->
+		<Replace Tag="TXT_KEY_EUI_BUILDING_OBSOLETETECH">
+			<Text>[43]Becomes obsolete upon discovery of [COLOR_CYAN]{1}[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_FREEPROMOTION">
+			<Text>[33][COLOR_GREEN]{1}[ENDCOLOR] promotion for all compatible military units</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILDING_TRAINEDFREEPROMOTION">
+			<Text>[34][COLOR_GREEN]{1}[ENDCOLOR] promotion for compatible military units trained in the city</Text>
+		</Replace>
+
+<!-- MISC EUI tooltips -->
+		<Replace Tag="TXT_KEY_EUI_REQUIRES">
+			<Text>Requires {1}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CBE91AF606834326BC7758BB489E509F_DESCRIPTION">
+			<Text>Tablet Data 1</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_OPEN_BORDERS_YOUR">
+			<Text>Your borders are open to them</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_OPEN_BORDERS_THEIR">
+			<Text>Their borders are open to you</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_CLOSED_BORDERS_YOUR">
+			<Text>Your borders are closed to them</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_CLOSED_BORDERS_THEIR">
+			<Text>Their borders are closed to you</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_BUILT_IN_X_CITIES">
+			<Text>Built in {1}/{3} {3: plural 1?city; 2?cities;}, building in {2} {2: plural 1?city; 2?cities;}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_WONDER_BUILT_BY">
+			<Text>Built by {@1_CivName} in {@2_CityName} in {@3_YearBuilt}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNKNOWN_CITY">
+			<Text>Unknown City</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_PLAY_NEXT_SONG">
+			<Text>Play Next Song</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_CITY_BANNERS">
+			<Text>City Banners</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_FLAGS">
+			<Text>Unit Flags</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_FLAG_PROMO_ENABLE">
+			<Text>Unit Flag Promotions</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_FLAG_PROMO_ENABLE_TT">
+			<Text>Display small icons for the most relevant promotions next to unit flags on the map, for your units and those of ennemies you are at war with.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_PREDICTIVE_RANGE">
+			<Text>Unit Strike Range Prediction</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_PREDICTIVE_RANGE_TT">
+			<Text>For ranged units, display red outline corresponding to strike range predicted from plot under mouse.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_PLOT_HELP_TOOLTIP">
+			<Text>Help Under Mouse</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_FIRST_FREE_UNIT_CLASS">
+			<Text>Free unit if first to discover this tech</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_FEATURE_PRODUCTION_MOD">
+			<Text>Feature Production Modifier {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_WORKER_SPEED_MOD">
+			<Text>Increases worker constrution speed by {1}% in empire</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_FIRST_FREE_TECHS">
+			<Text>Grants {1_Num} free technolog{1: plural 1?y; 2?ies;} if first to discover</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_EXTRA_WATER_SEE_FROM">
+			<Text>Expands visibility over water</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_ENDS_GAME">
+			<Text>Ends the game</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_WATER_WORK">
+			<Text>Enables working of water tiles</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_TRIGGERS_ARCHAEOLOGICAL_SITES">
+			<Text>Triggers the spawning of archaeological sites</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_AUTOMATE_PRODUCTION">
+			<Text>Automate City Production</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_AUTOMATE_PRODUCTION_TT">
+			<Text>This button automates city production, when checked.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_TYPES">
+			<Text>Unit Types Panel</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_TYPES_TT">
+			<Text>Toggle the unit types panel display in the lower right hand corner.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_ICON_ENABLE">
+			<Text>Unit Flag Tooltip Icon</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_UNIT_ICON_ENABLE_TT">
+			<Text>Display large unit icon next to the unit flag detailed tooltip.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_CITY_ICON_ENABLE">
+			<Text>Map City Icon</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_CITY_ICON_ENABLE_TT">
+			<Text>Display city icon with the yield icons on the map.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_TOOLTIP_ICON_ENABLE">
+			<Text>Large Tooltip Icon</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_TOOLTIP_ICON_ENABLE_TT">
+			<Text>Display a large relevant icon next to tooltips.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_NEXT_CITY_PRODUCTION">
+			<Text>Jump to Next City after Production Selection in City Screen</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_NEXT_CITY_PRODUCTION_TT">
+			<Text>Jump to next city which needs production selection after production selection in this city.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_RESET_CITY_PLOT_PURCHASE">
+			<Text>Reset Plot Purchase Mode after Closing City Screen</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_RESET_CITY_PLOT_PURCHASE_TT">
+			<Text>Reset plot purchase mode (big coin icon in the upper left city view) after closing the city screen.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_POLICY_CONFIRM">
+			<Text>Confirm Policy Selection</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_POLICY_CONFIRM_TT">
+			<Text>Display a popup to confirm player policy selection.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_CLOSE_POLICY_SCREEN">
+			<Text>{TXT_KEY_CLOSE} {TXT_KEY_ADVISOR_SCREEN_SOCIAL_POLICY_DISPLAY}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_CLOSE_POLICY_SCREEN_TT">
+			<Text>Auto close the policy screen after policy selection.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_CLOSE_TECH_TREE">
+			<Text>{TXT_KEY_CLOSE} {TXT_KEY_ADVISOR_SCREEN_TECH_TREE_DISPLAY}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_CLOSE_TECH_TREE_TT">
+			<Text>When accessed from technology notification icon, auto close the tech tree screen once tech is selected.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_CLOSE_CITY_STATE">
+			<Text>{TXT_KEY_CLOSE} {TXT_KEY_CIV_MINOR_SHORT_DESC}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_CLOSE_CITY_STATE_TT">
+			<Text>Auto close city state popup after performing an action: gift, pledge, tribute etc...</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_CLOSE_CITY_SCREEN">
+			<Text>{TXT_KEY_CLOSE} {TXT_KEY_ADVISOR_CITY_SCREEN_DISPLAY}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_CLOSE_CITY_SCREEN_TT">
+			<Text>When accessed from the production notification icon, auto close the city screen once production is selected.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_CITYVIEW_ADVISORS">
+			<Text>{TXT_KEY_ADVISOR_CITY_SCREEN_DISPLAY} {TXT_KEY_TOPIC_ADVISORS}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_CITYVIEW_ADVISORS_TT">
+			<Text>Diplay advisor production recommendations in city screen.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_CITYVIEW_CITIZEN_ALLOCATION">
+			<Text>{TXT_KEY_ADVISOR_CITY_SCREEN_DISPLAY} {TXT_KEY_CITYVIEW_CITIZEN_ALLOCATION}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_CITYVIEW_CITIZEN_ALLOCATION_TT">
+			<Text>Allow manual allocation of citizens in city screen.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_WORKER_FOCUS">
+			<Text>End Turn Worker Focus</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_WORKER_FOCUS_TT">
+			<Text>After pressing next turn, focus on worker which has just completed a significant improvement and delay next turn.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_TOP_PANEL_CLOCK">
+			<Text>Top Panel Clock</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_TOP_PANEL_CLOCK_TT">
+			<Text>Choose whether to display time and/or date in the top panel to the right.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_ALARM_CLOCK">
+			<Text>Alarm Clock</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_ALARM_CLOCK_TT">
+			<Text>Specify an alarm time at which a reminder pops up.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_LOAD_SCREEN_TOOLTIP">
+			<Text>Load Screen Tooltip</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUI_LOAD_SCREEN_TOOLTIP_TT">
+			<Text>Disable load screen tooltips to prevent random game corruptions.</Text>
+		</Replace>
+	</Language_en_US>
+</GameData>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow">
+
+	<!-- Listing Button Instance -->
+	<Instance Name="ListingButtonInstance">
+
+		<GridButton Size="906,28" Style="ListItem" Color="255,255,255,128" StateOffsetIncrement="0,0" ID="Button" >
+
+			<!-- Selected State -->
+			<AlphaAnim Pause="0" Cycle="Bounce" Speed=".5" AlphaStart="2" AlphaEnd="1" Hidden="1" ID="SelectHighlight" >
+				<Grid Style="GridSquareHL8" Size="906,28" />
+			</AlphaAnim>
+
+			<Stack Anchor="L,C" StackGrowth="Right">
+				<Container ID="ServerNameBox" Size="300,24">
+					<Label Anchor="L,C" Offset="10,0" ID="ServerNameLabel" TruncateWidth="280"/>
+				</Container>
+				<Container ID="ServerMapTypeBox" Size="130,24">
+					<Label Anchor="C,C" ID="ServerMapTypeLabel" TruncateWidth="130"/>
+				</Container>
+				<Container ID="ServerMapSizeBox" Size="130,24">
+					<Label Anchor="C,C" ID="ServerMapSizeLabel" TruncateWidth="130"/>
+				</Container>
+				<Container Size="130,24">
+					<Label Anchor="C,C" ID="MembersLabel"/>
+				</Container>
+				<Container Size="130,24">
+					<Label Anchor="C,C" ID="DLCHostedLabel"/>
+				</Container>
+
+				<!--<Container Size="100,24">
+					<Label Anchor="C,C" ID="ModsHostedLabel" String="TXT_KEY_MULTIPLAYER_LOBBY_NO"/>
+				</Container>-->
+			</Stack>
+
+			<!-- Join Button -->
+			<GridButton ID="JoinButton" Anchor="R,C" Style="SmallButton" Size="100,26" String="TXT_KEY_MULTIPLAYER_JOIN_GAME"/>
+
+		</GridButton>
+
+	</Instance>
+
+	<!-- Overall Screen Container -->
+	<Grid Size="960,Full" Anchor="C,B" Offset="0,-39" Padding="0,0" Style="Grid9DetailFive140" ID="MainGrid" >
+
+		<Box Style="MenuLeftSideTreatment"/>
+		<Box Style="MenuRightSideTreatment"/>
+		<Box Style="MenuTopTreatment"/>
+		<Box Style="MenuBottomTreatment"/>
+
+		<!-- Panel Header Text -->
+		<Label Style="MenuTitleCaption" ID="TitleLabel" />
+
+		<!-- Top Panel -->
+		<Stack Offset="18,42" StackGrowth="Right">
+			<GridButton Size="300,28" Style="ZoomButton" ID="SortbyServer" String="TXT_KEY_MULTIPLAYER_SERVER_NAME" Font="TwCenMT20"/>
+			<GridButton Size="130,28" Style="ZoomButton" ID="SortbyMapName" String="TXT_KEY_AD_SETUP_MAP_TYPE" Font="TwCenMT20"/>
+			<GridButton Size="130,28" Style="ZoomButton" ID="SortbyMapSize" String="TXT_KEY_AD_SETUP_MAP_SIZE" Font="TwCenMT20"/>
+			<GridButton Size="130,28" Style="ZoomButton" ID="SortbyMembers" String="TXT_KEY_MULTIPLAYER_MEMBERS" Font="TwCenMT20"/>
+			<GridButton Size="130,28" Style="ZoomButton" ID="SortbyDLCHosted" String="TXT_KEY_MULTIPLAYER_DLCHOSTED" Font="TwCenMT20"/>
+			<!-- <GridButton Size="100,28" Style="ZoomButton" ID="SortbyModsHosted" String="TXT_KEY_MULTIPLAYER_MODSHOSTED" Font="TwCenMT20"/> -->
+		</Stack>
+		<!-- Scrollable list of games -->
+		<ScrollPanel ID="ListingScrollPanel" Vertical="1" Size="906,463" Offset="17,74" AutoScrollBar="1">
+			<ScrollBar	Style="VertSlider" Length="420" Anchor="R,C" AnchorSide="O,I" />
+			<UpButton	Style="ScrollBarUp" Anchor="R,T" AnchorSide="O,I" />
+			<DownButton Style="ScrollBarDown" Anchor="R,B" AnchorSide="O,I" />
+			<Stack ID="ListingStack" StackGrowth="B" />
+			<Image AnchorSide="I.O" Anchor="L,T" Texture="HorizontalTrim.dds" Size="926.5"/>
+			<Image AnchorSide="I.O" Anchor="L,B" Texture="HorizontalTrim.dds" Size="926.5"/>
+		</ScrollPanel>
+
+		<!-- Bottom Buttons -->
+		<Stack Anchor="L,B" Offset="38,54" StackGrowth="Right" Padding="8" ID="BottomStack">
+
+			<GridButton Style="SmallButton" Size="150,32" ID="BackButton" String="TXT_KEY_BACK_BUTTON"/>
+			<GridButton Style="SmallButton" Size="150,32" StateOffsetIncrement="0,0" ID="RefreshButton" String="TXT_KEY_MULTIPLAYER_REFRESH_GAME_LIST" ToolTip="TXT_KEY_MULTIPLAYER_REFRESH_GAME_LIST_TT"/>
+			<Box Size="280,30" Color="255.255.255.0" Hidden="1">
+				<PullDown Style="GenericPullUp" ScrollThreshold="210" Size="280,30" SpaceForScroll="0" ID="ListTypePulldown"/>
+				<Label Anchor="C,C" ID="ListTypeLabel" TruncateWidth="280"/>
+			</Box>
+			<GridButton ID="LoadButton" Size="150,32" Style="SmallButton" String="TXT_KEY_LOAD_GAME" ToolTip="TXT_KEY_LOAD_GAME_TT"/>
+			<Box ID="ConnectIPBox" Offset="0,6" Size="124,24" Color="255,255,200,255" Hidden="1">
+				<Label Anchor="L,T" AnchorSide="I,O" Offset="4,4" LeadingOffset="-8" WrapWidth="124" String="TXT_KEY_MULTIPLAYER_CONNECT_TO_IP" ToolTip="TXT_KEY_MULTIPLAYER_CONNECT_TO_IP_TT"/>
+				<Box Anchor="C,C" Size="122,22" Color="0,0,0,255" >
+					<EditBox EditMode="0" CallOnChar="0" FocusStop="0" Obscure="0" Size="120,18" Anchor="C,C" ID="ConnectIPEdit" Font="TwCenMT14" NumberInput="0" MaxLength="64" />
+				</Box>
+			</Box>
+		</Stack>
+		<GridButton ID="HostButton" ColorSet="Beige_Black" Font="TwCenMT22" Anchor="R,B" Offset="38,54" Size="260,45" Style="BaseButton" String="TXT_KEY_MULTIPLAYER_HOST_GAME" ToolTip="TXT_KEY_MULTIPLAYER_HOST_GAME_TT"/>
+	</Grid>
+</Context>

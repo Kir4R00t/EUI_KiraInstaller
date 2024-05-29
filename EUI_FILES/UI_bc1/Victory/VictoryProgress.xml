@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Anton Strenger (Firaxis Games) -->
+<Context ColorSet="Beige_Black" Font="TwCenMT20" FontStyle="Shadow">
+	<!-- Scrap Instances -->
+	<Container ID="Scrap" Hidden="1"/>
+	<!-- Domination Victory Item Instance -->
+	<Instance Name="DominationItem">
+		<Image ID="Item" Size="64,64" Texture="NotificationIconsInfoFrame.dds">
+			<Image ID="CivIconBG" Size="64,64"/>
+			<Image ID="CivIconShadow" Size="48,48" Offset="9,9"/>
+			<Image ID="CivIcon" Size="48,48" Offset="8,8"/>
+			<Image ID="CivDead" Size="64,64" Texture="Swords64.dds"/>
+			<Image ID="ConqueredCivSmallFrame" Anchor="R,B" Offset="-10,0" Size="45,45" Texture="CivSymbolsFrame360.dds">
+				<Image ID="ConqueredCivIconBG" Size="45,45"/>
+				<Image ID="ConqueredCivIconShadow" Size="32,32" Anchor="C,C" Offset="1,1" />
+				<Image ID="ConqueredCivIcon" Size="32,32" Anchor="C,C"/>
+			</Image>
+			<Label ID="TeamID" Anchor="C,B" Offset="0,10" Font="TwCenMT14" ColorSet="Beige_Black_Alpha" FontStyle="Stroke"/>
+		</Image>
+	</Instance>
+	<!-- Tech Instances -->
+	<Instance Name="IconItem">
+		<Image ID="Item" Size="80,80" Texture="NotificationFrameBase.dds">
+			<Image ID="Icon" Size="80,80"/>
+		</Image>
+	</Instance>
+	<Instance Name="TechCiv">
+		<Container ID="Row" Size="618,110">
+			<Image Offset="4.4" Size="45,45" Texture="CivSymbolsFrame360.dds">
+				<Image ID="CivIconBG" Size="45,45"/>
+				<Image ID="CivIconShadow" Size="32,32" Anchor="C,C" Offset="1,1"/>
+				<Image ID="CivIcon" Size="32,32" Anchor="C,C"/>
+				<Image ID="CivDead" Size="32,32" Anchor="C,C" Texture="Swords32.dds"/>
+				<Label ID="Name" Anchor="R,C" AnchorSide="O.I" Offset="0,-6" TruncateWidth="500"/>
+			</Image>
+			<Stack ID="ApolloProject" Offset="36,30" Padding="-6" WrapWidth="550" StackGrowth="Right" WrapGrowth="Down">
+				<Image Size="80,80" Texture="NotificationFrameBase.dds">
+					<Image ID="ApolloIcon" Size="80,80" TextureOffset="80.320" Texture="WonderAtlas640.dds"/>
+					<!-- <ScrollAnim ID="BubblesAnim" Anchor="C,C" Size="54,54" Speed="0.25" Texture="NotificationScienceBubbles.dds" MaskTexture="TechMeterMask.dds"/> -->
+					<Container Size="54,54" Offset="13,13">
+						<ScrollAnim ID="BubblesAnim" Size="54,54" Speed=".3" Texture="Bubbles256.dds" MaskTexture="TechMeterMask.dds"/>
+						<Image ID="TechProgress" Anchor="L,B" Size="54,54" Texture="TechMeter.dds" StretchMode="Uniform" Sampler="Linear" BranchAlpha=".5"/>
+					</Container>
+					<!-- <ScrollAnim Anchor="C,C" Size="100.100" Speed=".3" Texture="NotificationScienceBubbles.dds" MaskTexture="NotificationScienceMask.dds"/> -->
+				</Image>
+			</Stack>
+			<Image Anchor="C,B" Texture="bar500x2.dds" Size="500.1"/>
+		</Container>
+	</Instance>
+	<!-- Diplo Details Item Instance -->
+	<Instance Name="DiploCiv">
+		<Grid ID="Row" Size="600,50" Style="Grid9FrameTurns" Color="White.255">
+			<Stack Anchor="L.C" StackGrowth="Right">
+				<Container Anchor="L,C" Size="162,32">
+					<Label ID="TotalVotes" Anchor="C,C" Offset="46,-2" Font="TwCenMT24"/>
+				</Container>
+				<Box Anchor="L,C" Size="1,32" Color="255.255.200.64"/>
+				<Container Anchor="L,C" Size="114,32">
+					<Label ID="SelfVotes" Anchor="C,C" Offset="0,-2" Font="TwCenMT24"/>
+				</Container>
+				<Box Anchor="L,C" Size="1,32" Color="255.255.200.64"/>
+				<Container Anchor="L,C" Size="114,32">
+					<Label ID="CityStateVotes" Anchor="C,C" Offset="0,-2" Font="TwCenMT24"/>
+				</Container>
+				<Box Anchor="L,C" Size="1,32" Color="255.255.200.64"/>
+				<Container Anchor="L,C" Size="114,32">
+					<Label ID="LiberatedCityStateVotes" Anchor="C,C" Offset="0,-2" Font="TwCenMT24"/>
+				</Container>
+				<Box Anchor="L,C" Size="1,32" Color="255.255.200.64"/>
+				<Container Anchor="L,C" Size="114,32">
+					<Label ID="LiberatedCivVotes" Anchor="C,C" Offset="0,-2" Font="TwCenMT24"/>
+				</Container>
+				<Box Anchor="L,C" Size="1,32" Color="255.255.200.64"/>
+				<Container Size="114,32">
+					<Container ID="LastVoteCiv" Offset="32,16">
+						<Image ID="LastVoteCivIconBG" Size="32,32" Anchor="C,C"/>
+						<Image ID="LastVoteCivIconShadow" Size="24,24" Anchor="C,C"/>
+						<Image ID="LastVoteCivIcon" Size="24,24" Anchor="C,C"/>
+					</Container>
+				</Container>
+			</Stack>
+			<Image Anchor="L,C" Offset="28.0" Size="45,45" Texture="CivSymbolsFrame360.dds">
+				<Image ID="CivIconBG" Size="45,45"/>
+				<Image ID="CivIconShadow" Size="32,32" Anchor="C,C" Offset="1,1"/>
+				<Image ID="CivIcon" Size="32,32" Anchor="C,C"/>
+				<Image ID="CivDead" Size="32,32" Anchor="C,C" Texture="Swords32.dds"/>
+				<Image ID="UNIcon" Size="45.45" Anchor="L,C" Offset="40,0" TextureOffset="90,135" Texture="WonderAtlas360.dds" Hidden="1"/>
+				<Label ID="Name" Anchor="L,B" AnchorSide="O.I" Offset="-5,5" TruncateWidth="500"/>
+			</Image>
+		</Grid>
+	</Instance>
+	<!-- Culture Victory Item Instance -->
+	<Instance Name="CultureItem">
+		<Image ID="Item" Size="64,64" Texture="NotificationIconsInfoFrame.dds">
+			<Image ID="CivIconBG" Size="64,64">
+				<Image ID="CivIconShadow" Size="48,48" Offset="9,9"/>
+				<Image ID="CivIcon" Size="48,48" Offset="8,8" />
+			</Image>
+			<Image ID="CultureProgress" Size="42,42" Offset="11,11" Texture="CivIconBGSizes.dds" Direction="Up" Color="255,0,255,128"/>
+			<Image ID="InfluenceTrendIcon" Size="18,18" Offset="44,40" Texture="Arrows_Trend_UpDown36.dds" Color="255,0,255,255" />
+			<AlphaAnim ID="CivGlow" Size="64,64" Texture="NotificationShineGlow.dds" MaskTexture="NotificationShineMask.dds" Pause="0" Cycle="Bounce" Speed="1" AlphaStart=".5" AlphaEnd="0"/>
+		</Image>
+	</Instance>
+	<Instance Name="CultureCiv">
+		<Container ID="Row" Size="618,110">
+			<Label ID="CultureLabel" Offset="35,5" Anchor="R,T" Font="TwCenMT16"/>
+			<Image Offset="4.4" Size="45,45" Texture="CivSymbolsFrame360.dds">
+				<Image ID="CivIconBG" Size="45,45"/>
+				<Image ID="CivIconShadow" Size="32,32" Anchor="C,C" Offset="1,1"/>
+				<Image ID="CivIcon" Size="32,32" Anchor="C,C"/>
+				<Image ID="CivDead" Anchor="C,C" Size="32,32" Texture="Swords32.dds"/>
+				<Label ID="Name" Anchor="R,C" AnchorSide="O.I" Offset="0,-6" TruncateWidth="500"/>
+			</Image>
+			<Stack ID="CultureStack" Offset="36,30" Padding="-6" WrapWidth="550" StackGrowth="Right" WrapGrowth="Down"/>
+			<Image Anchor="C,B" Texture="bar500x2.dds" Size="500.1"/>
+		</Container>
+	</Instance>
+	<!-- Score Details Item Instance -->
+	<Instance Name="ScoreCiv">
+		<Container ID="Row" Size="618,64">
+			<!-- Leader Portrait -->
+			<Image Size="64,64" Texture="IconFrame64.dds">
+				<Image ID="Portrait" Size="64,64"/>
+			</Image>
+			<!-- Civ Icon -->
+			<Image ID="CivFrame" Size="64,64" Offset="58,0" Texture="IconFrame64.dds">
+				<Image ID="CivIconBG" Size="64,64"/>
+				<Image ID="CivIconShadow" Size="48,48" Offset="9,9"/>
+				<Image ID="CivIcon" Size="48,48" Offset="8,8"/>
+				<Image ID="CivDead" Size="64,64" Texture="Swords64.dds"/>
+			</Image>
+			<Label ID="Name" Anchor="L,C" WrapWidth="370" Offset="128,0" Font="TwCenMT24" TruncateWidth="500"/>
+			<Label ID="Score" Anchor="R,C" Offset="36,0" Font="TwCenMT24"/>
+			<Image Anchor="C,B" Texture="bar500x2.dds" Size="500.1"/>
+		</Container>
+	</Instance>
+	<!-- Screen Main Body -->
+	<Box Style="BGBlock_ClearTopBar"/>
+
+	<Grid Size="960,658" Anchor="C,C" Offset="0,36" Padding="0,0" Style="Grid9DetailFive140">
+		<Image Anchor="C,T" AnchorSide="I.O" Size="256,64" Offset="0,-14" Texture="Top512IconTrim.dds">
+			<Image ID="CivIconBG" Size="64,64" Offset="95,0">
+				<Image ID="CivIconShadow" Size="48,48" Offset="9,9"/>
+				<Image ID="CivIcon" Size="48,48" Offset="8,8"/>
+			</Image>
+		</Image>
+		<!-- Side treatments -->
+		<Box Style="MenuLeftSideTreatment"/>
+		<Box Style="MenuRightSideTreatment"/>
+		<!-- Panel Header Text -->
+		<Label Style="MenuTitleCaption" String="TXT_KEY_VP_TITLE"/>
+		<!-- Left Panel -->
+		<Stack Offset="18,44" StackGrowth="Bottom">
+			<!-- SCORE -->
+			<Box Anchor="C,T" Size="300,32" Color="0.0.0.128">
+				<Stack Size="971,32" StackGrowth="Right">
+					<Box Size="300,24" Color="0.0.0.128">
+						<CheckBox ID="ScoreCheckBox" Font="TwCenMT22" String="TXT_KEY_VP_SCORE" TextAnchor="R,C"/>
+					</Box>
+					<Image Anchor="R,T" Texture="VerticalTrim.dds" Size="5.572"/>
+				</Stack>
+				<Image Anchor="L,B" Texture="HorizontalTrim.dds" Size="301.5"/>
+				<TextButton ID="ScoreDetails" Offset="5,0" Anchor="R,C" Style="Font16or20" ColorSet="Beige_Black_Alpha" String="TXT_KEY_VP_DIPLO_DETAILS" MouseOverStyle="SoftShadow" ConsumeMouse="1"/>
+			</Box>
+			<Container ID="TimeStack" Size="300,538">
+				<Stack ID="ScoreDetailsStack" Offset="15,6" Padding="12" StackGrowth="Bottom">
+					<Label ID="RemainingTurns">
+						<Label String="TXT_KEY_VP_TURNS" AnchorSide="O,I" Anchor="R,T" Offset="8,0"/>
+					</Label>
+					<Image TextureOffset="15,0" Texture="bar300x2.dds" Size="270.1"/>
+					<Label ID="Cities" Anchor="R,T">
+						<Label String="TXT_KEY_VP_CITIES" AnchorSide="O,I" Anchor="R,T" Offset="-270,0"/>
+					</Label>
+					<Label ID="Population" Anchor="R,T">
+						<Label String="TXT_KEY_VP_POPULATION" AnchorSide="O,I" Anchor="R,T" Offset="-270,0"/>
+					</Label>
+					<Label ID="Land" Anchor="R,T">
+						<Label String="TXT_KEY_VP_LAND" AnchorSide="O,I" Anchor="R,T" Offset="-270,0"/>
+					</Label>
+					<Label ID="Wonders" Anchor="R,T">
+						<Label String="TXT_KEY_VP_WONDERS" AnchorSide="O,I" Anchor="R,T" Offset="-270,0"/>
+					</Label>
+					<Label ID="Tech" Anchor="R,T">
+						<Label String="TXT_KEY_VP_TECH" AnchorSide="O,I" Anchor="R,T" Offset="-270,0"/>
+					</Label>
+					<Label ID="FutureTech" Anchor="R,T">
+						<Label String="TXT_KEY_VP_FUTURE_TECH" AnchorSide="O,I" Anchor="R,T" Offset="-270,0"/>
+					</Label>
+					<Label ID="Policies" Anchor="R,T">
+						<Label String="TXT_KEY_VP_POLICIES" AnchorSide="O,I" Anchor="R,T" Offset="-270,0"/>
+					</Label>
+					<Label ID="GreatWorks" Anchor="R,T">
+						<Label String="TXT_KEY_VP_GREAT_WORKS" AnchorSide="O,I" Anchor="R,T" Offset="-270,0"/>
+					</Label>
+					<Label ID="Religion" Anchor="R,T">
+						<Label String="TXT_KEY_VP_RELIGION" AnchorSide="O,I" Anchor="R,T" Offset="-270,0"/>
+					</Label>
+					<Label ID="Scenario1" Anchor="R,T">
+						<Label String="TXT_KEY_VP_SCENARIO1" AnchorSide="O,I" Anchor="R,T" Offset="-270,0"/>
+					</Label>
+					<Label ID="Scenario2" Anchor="R,T">
+						<Label String="TXT_KEY_VP_SCENARIO2" AnchorSide="O,I" Anchor="R,T" Offset="-270,0"/>
+					</Label>
+					<Label ID="Scenario3" Anchor="R,T">
+						<Label String="TXT_KEY_VP_SCENARIO3" AnchorSide="O,I" Anchor="R,T" Offset="-270,0"/>
+					</Label>
+					<Label ID="Scenario4" Anchor="R,T">
+						<Label String="TXT_KEY_VP_SCENARIO4" AnchorSide="O,I" Anchor="R,T" Offset="-270,0"/>
+					</Label>
+					<Image TextureOffset="15,0" Texture="bar300x2.dds" Size="270.1"/>
+					<Label ID="Score" Anchor="R,T">
+						<Label String="TXT_KEY_VP_SCORE" AnchorSide="O,I" Anchor="R,T" Offset="-270,0"/>
+					</Label>
+				</Stack>
+			</Container>
+			<Container ID="TimeVictoryDisabledBox" Size="300,538" Hidden="1">
+				<Label Offset="0,10" Anchor="C,T" String="TXT_KEY_VP_TIME_VICTORY_DISABLED"/>
+			</Container>
+		</Stack>
+		<!-- Bottom Panel -->
+		<Container Anchor="C,B" AnchorSide="I.I" Offset="0,54" Size="910,56">
+			<!-- Back Button -->
+			<GridButton ID="BackButton" Anchor="L,B" Style="SmallButton" Size="150,32" Offset="14,0" StateOffsetIncrement="0,0">
+				<Label Anchor="C,C" String="TXT_KEY_BACK_BUTTON" Font="TwCenMT18" ColorSet="Beige_Black_Alpha"/>
+			</GridButton>
+		</Container>
+		<!-- Main Right Hand Size Panel -->
+		<Stack ID="YourDetails" Offset="325,44" StackGrowth="Bottom">
+			<!-- DOMINATION -->
+			<Container Size="618,146">
+				<Image Size="128,128" Anchor="R,C" Texture="VictoryConditions_128_Shared.dds" TextureOffset="128,128" Color="255,255,255,100"/>
+				<CheckBox ID="DominationCheckBox" Offset="5,0" Font="TwCenMT22" String="TXT_KEY_VICTORYSCREEN_DOMINATION" TextAnchor="R,C"/>
+				<Container ID="DominationVictoryProgress" Size="618,142">
+					<Label ID="DominationLabel" Offset="5,5" Anchor="R.T" Font="TwCenMT16"/>
+					<ScrollPanel ID="DominationScrollPanel" Offset="0,24" Size="596,118" Vertical="1">
+						<ScrollBar Style="VertSlider" Anchor="R,C" AnchorSide="O,I" Length="79"/>
+						<UpButton Anchor="R,T" AnchorSide="O,I" Style="ScrollBarUp"/>
+						<DownButton Anchor="R,B" AnchorSide="O,I" Style="ScrollBarDown"/>
+						<Stack ID="DominationStack" Padding="-2" WrapWidth="580" StackGrowth="Right" WrapGrowth="Down"/>
+					</ScrollPanel>
+				</Container>
+				<Label ID="DominationDisabledLabel" Offset="5,5" Anchor="C,C" String="TXT_KEY_VP_DOMINATION_VICTORY_DISABLED"/>
+				<Image Anchor="L,B" Offset="-3,0" Texture="HorizontalTrim.dds" Size="622.5"/>
+			</Container>
+			<!-- TECH -->
+			<Container ID="TechBox" Size="618,140">
+				<Image Size="128,128" Anchor="R,C" Texture="VictoryConditions_128_Shared.dds" TextureOffset="0,0" Color="255,255,255,100"/>
+				<CheckBox ID="SpaceCheckBox" Offset="5,0" Font="TwCenMT22" String="TXT_KEY_VICTORYSCREEN_SPACE_RACE" TextAnchor="R,C"/>
+				<Container ID="ScienceVictoryProgress" Size="618,142">
+					<Label ID="SpaceInfo" Offset="5,5" Anchor="R.T" Font="TwCenMT16"/>
+					<!-- TechMeter -->
+					<Stack ID="ApolloProject" Offset="0,56" Padding="1" StackGrowth="Right">
+						<Container Size="128,80">
+							<Image Size="128,128" Offset="0,-44" Texture="LeaderPortraits1024Frame.dds" ToolTip="TXT_KEY_VP_TECH_PROGRESS">
+								<!-- <TextureBar ID="TechProgress" Anchor="C,C" Offset="0,1" Size="86.86" Texture="TechMeter.dds" Direction="Up"/> -->
+								<Container Size="86,86" Offset="21,22">
+									<Image ID="TechProgress" Anchor="L,B" Size="86,86" Texture="TechMeter.dds"/>
+									<ScrollAnim ID="BubblesAnim" Size="86,86" Speed="0.25" Texture="Bubbles256.dds" MaskTexture="TechMeterMask.dds"/>
+								</Container>
+								<Image ID="ApolloIcon" Size="128,128" TextureOffset="128.512" Texture="WonderAtlas1024.dds" Color="White.64"/>
+								<AlphaAnim ID="TechIconAnim" Hidden="1" Anchor="C,C" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="1" AlphaEnd="0">
+									<Image Anchor="C,C" Size="128,128" TextureOffset="128.512" Texture="WonderAtlas1024.dds" Color="White.255"/>
+								</AlphaAnim>
+							</Image>
+						</Container>
+					</Stack>
+					<TextButton ID="SpaceRaceDetails" Offset="2,7" Anchor="R,B" Style="Font16or20" ColorSet="Beige_Black_Alpha" String="TXT_KEY_VP_DIPLO_DETAILS" MouseOverStyle="SoftShadow" ConsumeMouse="1"/>
+				</Container>
+				<Label ID="ScienceVictoryDisabled" Offset="5,5" Anchor="C,C" String="TXT_KEY_VP_SCIENCE_VICTORY_DISABLED"/>
+				<Image Anchor="L,B" Offset="-3,0" Texture="HorizontalTrim.dds" Size="622.5"/>
+			</Container>
+			<!-- DIPLOMACY -->
+			<Container ID="DiploBox" Size="618,140">
+				<Image Size="128,128" Anchor="R,C" Texture="VictoryConditions_128_Shared.dds" TextureOffset="0,128" Color="255,255,255,100"/>
+				<CheckBox ID="DiploCheckBox" Offset="5,0" Font="TwCenMT22" String="TXT_KEY_VICTORYSCREEN_DIPLOMATIC" TextAnchor="R,C"/>
+				<Container ID="DiploVictoryProgress" Size="618,142">
+					<Label ID="UNInfo" Offset="5,5" Anchor="R.T" Font="TwCenMT16" WrapWidth="400" />
+					<Image ID="UNIconFrame" Anchor="L,C" Offset="0,8" Size="128,128" Texture="LeaderPortraits1024Frame.dds">
+						<Image Offset="-1,1" Size="128,128" Texture="UN128.dds" Color="White.64"/>
+						<Image ID="UNIcon" Size="128,128" TextureOffset="256.384" Texture="WonderAtlas1024.dds" Color="White.255"/>
+					</Image>
+					<Container Size="12,64" Offset="170,8" Anchor="C,C">
+						<Stack Anchor="T.L" AnchorSide="O.I" Padding="12" StackGrowth="Bottom">
+							<Label ID="TurnsUntilSessionLabel" Anchor="R,T" String="TXT_KEY_VP_DIPLO_TURNS_UNTIL_SESSION"/>
+							<Label ID="VotesNeededLabel" Anchor="R,T" String="TXT_KEY_VP_DIPLO_DELEGATES_NEEDED"/>
+							<Label ID="VotesHaveLabel" Anchor="R,T" String="TXT_KEY_VP_DIPLO_DELEGATES_CONTROLLED"/>
+						</Stack>
+						<Stack Anchor="R.T" AnchorSide="O.I" Padding="12" StackGrowth="Bottom">
+							<Label ID="TurnsUntilSession" Anchor="R,T" String="10"/>
+							<Label ID="VotesNeeded" Anchor="R,T" String="12"/>
+							<Label ID="VotesHave" Anchor="R,T" String="1"/>
+						</Stack>
+					</Container>
+					<TextButton ID="DiploDetails" Offset="2,7" Anchor="R,B" Font="TwCenMT16" ColorSet="Beige_Black_Alpha" String="TXT_KEY_VP_DIPLO_DETAILS" MouseOverStyle="SoftShadow" ConsumeMouse="1"/>
+				</Container>
+				<Label ID="DiploVictoryDisabled" Offset="5,5" Anchor="C,C" String="TXT_KEY_VP_DIPLO_VICTORY_DISABLED"/>
+				<Image Anchor="L,B" Offset="-3,0" Texture="HorizontalTrim.dds" Size="622.5"/>
+			</Container>
+			<!-- CULTURE -->
+			<Container ID="CultureBox" Size="618,146">
+				<Image Size="128,128" Anchor="R,C" Texture="VictoryConditions_128_Shared.dds" TextureOffset="128,0" Color="255,255,255,100"/>
+				<CheckBox ID="CultureCheckBox" Offset="5,0" Font="TwCenMT22" String="TXT_KEY_VICTORYSCREEN_CULTURAL" TextAnchor="R,C"/>
+				<Container ID="CultureVictoryProgress" Size="618,142">
+					<Label ID="CultureLabel" Offset="5,5" Anchor="R,T" Font="TwCenMT16"/>
+					<ScrollPanel ID="CultureScrollPanel" Offset="0,24" Size="596,122" Vertical="1">
+						<ScrollBar Style="VertSlider" Anchor="R,C" AnchorSide="O,I" Length="79"/>
+						<UpButton Anchor="R,T" AnchorSide="O,I" Style="ScrollBarUp"/>
+						<DownButton Anchor="R,B" AnchorSide="O,I" Style="ScrollBarDown"/>
+						<Stack ID="CultureStack" Padding="-2" WrapWidth="580" StackGrowth="Right" WrapGrowth="Down"/>
+					</ScrollPanel>
+					<TextButton ID="CultureDetails" Offset="2,0" Anchor="R,B" Font="TwCenMT16" ColorSet="Beige_Black_Alpha" String="TXT_KEY_VP_DIPLO_DETAILS" MouseOverStyle="SoftShadow" ConsumeMouse="1"/>
+				</Container>
+				<Label ID="CultureVictoryDisabled" Offset="5,5" Anchor="C,C" String="TXT_KEY_VP_CULTURE_VICTORY_DISABLED"/>
+			</Container>
+		</Stack>
+		<!-- ================================================================================================= -->
+		<!-- ================================================================================================= -->
+		<!-- Everybody TECH -->
+		<Container ID="SpaceRaceScreen" Anchor="R,T" Size="618,570" Offset="17,44" Hidden="1">
+			<Box Anchor="C,T" Size="618,32" Color="0.0.0.128">
+				<Label Offset="5,2" Font="TwCenMT24" String="TXT_KEY_VICTORYSCREEN_SPACE_RACE"/>
+				<Image Anchor="L,B" Offset="-3,0" Texture="HorizontalTrim.dds" Size="622.5"/>
+			</Box>
+			<ScrollPanel ID="TechScrollPanel" Offset="0,32" Size="596,539" Vertical="1">
+				<ScrollBar Style="VertSlider" Anchor="R,C" AnchorSide="O,I" Length="504"/>
+				<UpButton Anchor="R,T" AnchorSide="O,I" Style="ScrollBarUp"/>
+				<DownButton Anchor="R,B" AnchorSide="O,I" Style="ScrollBarDown"/>
+				<Stack ID="TechStack" StackGrowth="Bottom"/>
+			</ScrollPanel>
+		</Container>
+		<!-- Everybody CULTURE -->
+		<Container ID="CultureScreen" Anchor="R,T" Size="618,570" Offset="17,44" Hidden="1">
+
+			<Box Anchor="C,T" Size="618,32" Offset="0,0" Color="0.0.0.128" >
+				<Label Offset="5,2" Font="TwCenMT24" String="TXT_KEY_VICTORYSCREEN_CULTURAL" />
+				<Image Anchor="L,B" Offset="-3,0" Texture="HorizontalTrim.dds" Size="622.5"/>
+			</Box>
+
+			<ScrollPanel ID="CultureCivScrollPanel" Offset="0,32" Size="596,539" Vertical="1" >
+				<ScrollBar Offset="0,0" Style="VertSlider" Anchor="R,C" AnchorSide="O,I" Length="504" />
+				<UpButton Anchor="R,T" AnchorSide="O,I" Style="ScrollBarUp" />
+				<DownButton Anchor="R,B" AnchorSide="O,I" Style="ScrollBarDown" />
+				<Stack ID="CultureCivs" StackGrowth="Bottom" />
+			</ScrollPanel>
+
+		</Container>
+		<!-- Everybody DIPLOMACY -->
+		<Container ID="DiploScreen" Anchor="R,T" Size="618,570" Offset="17,44" Hidden="1">
+			<Box Anchor="C,T" Size="618,72" Color="0.0.0.128">
+				<Label Offset="5,2" Font="TwCenMT24" String="TXT_KEY_VICTORYSCREEN_DIPLOMATIC"/>
+				<Label Offset="5,40" Font="TwCenMT18" String="TXT_KEY_VP_DIPLO_SUBTITLE_ALT"/>
+				<Image Anchor="L,B" Offset="-3,0" Texture="HorizontalTrim.dds" Size="622.5"/>
+			</Box>
+			<!-- Column Title Bar for Diplo Screen-->
+			<Box Anchor="C,T" Size="618,32" Offset="0,72" Color="0.0.0.128">
+				<Stack StackGrowth="Right">
+					<Container Size="160,32">
+						<Label Anchor="C,C" Offset="0,-2" Font="TwCenMT16" String="TXT_KEY_VP_DIPLO_MY_VOTES_TITLE_ALT" ToolTip="TXT_KEY_VP_DIPLO_MY_VOTES_COL_TT_ALT"/>
+					</Container>
+					<Image Texture="VerticalTrim.dds" Size="5.27"/>
+					<Container Size="110,32">
+						<Label Anchor="C,C" Offset="0,-2" Font="TwCenMT16" String="TXT_KEY_VP_DIPLO_SELF_VOTES_TITLE_ALT" ToolTip="TXT_KEY_VP_DIPLO_SELF_VOTES_COL_TT_ALT"/>
+					</Container>
+					<Image Texture="VerticalTrim.dds" Size="5.27"/>
+					<Container Size="110,32">
+						<Label Anchor="C,C" Offset="0,-2" Font="TwCenMT16" String="TXT_KEY_POP_CSTATES" ToolTip="TXT_KEY_VP_DIPLO_CS_VOTES_COL_TT_ALT"/>
+					</Container>
+					<Image Texture="VerticalTrim.dds" Size="5.27"/>
+					<Container Size="110,32">
+						<Label Anchor="C,C" Offset="-8,-2" Font="TwCenMT16" String="TXT_KEY_VP_DIPLO_LIBERATED_TITLE" ToolTip="TXT_KEY_VP_DIPLO_LIBERATED_VOTES_COL_TT_ALT">
+							<Image Anchor="R,C" AnchorSide="O.I" Offset="3,0" Texture="CityState22.dds" Size="22.22"/>
+						</Label>
+					</Container>
+					<Image Texture="VerticalTrim.dds" Size="5.27"/>
+					<Container Size="110,32">
+						<Label Anchor="C,C" Offset="0,-2" Font="TwCenMT16" String="TXT_KEY_VP_DIPLO_LIBERATED_CIV_TITLE_ALT" ToolTip="TXT_KEY_VP_DIPLO_LIBERATED_CIV_COL_TT_ALT"/>
+					</Container>
+				</Stack>
+				<Image Anchor="L,B" Offset="-3,0" Texture="HorizontalTrim.dds" Size="622.5"/>
+			</Box>
+			<!-- Diplo Screen Scroll List -->
+			<ScrollPanel ID="DiploScrollPanel" Offset="0,104" Size="596,412" Vertical="1">
+				<ScrollBar Style="VertSlider" Anchor="R,C" AnchorSide="O,I" Length="376"/>
+				<UpButton Anchor="R,T" AnchorSide="O,I" Style="ScrollBarUp"/>
+				<DownButton Anchor="R,B" AnchorSide="O,I" Style="ScrollBarDown"/>
+				<Stack ID="DiploStack" Padding="-3" StackGrowth="Bottom"/>
+			</ScrollPanel>
+			<Image Anchor="L,B" Offset="-3,48" Texture="HorizontalTrim.dds" Size="622.5"/>
+			<Label ID="TotalDiploVotes" Offset="10,28" Anchor="L,B" String="TXT_KEY_VP_DIPLO_VOTES"/>
+			<Label ID="NeededVotes" Offset="10,6" Anchor="L,B" String="TXT_KEY_VP_DIPLO_VOTES_NEEDED"/>
+		</Container>
+		<!-- Everybody Score -->
+		<Container ID="ScoreScreen" Anchor="R,T" Size="618,570" Offset="17,44" Hidden="1">
+			<Box Anchor="C,T" Size="618,32" Color="0.0.0.128">
+				<Label Anchor="c,C" Offset="0,-4" Font="TwCenMT22" String="TXT_KEY_VP_DIPLO_CIV_RANK"/>
+				<Image Anchor="L,B" Offset="-3,0" Texture="HorizontalTrim.dds" Size="622.5"/>
+			</Box>
+			<ScrollPanel ID="ScoreScrollPanel" Offset="0,32" Size="596,539" Vertical="1">
+				<ScrollBar Style="VertSlider" Anchor="R,C" AnchorSide="O,I" Length="503"/>
+				<UpButton Anchor="R,T" AnchorSide="O,I" Style="ScrollBarUp"/>
+				<DownButton Anchor="R,B" AnchorSide="O,I" Style="ScrollBarDown"/>
+				<Stack ID="ScoreStack" StackGrowth="Bottom"/>
+			</ScrollPanel>
+		</Container>
+	</Grid>
+</Context>

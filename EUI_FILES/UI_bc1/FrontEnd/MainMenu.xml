@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context ColorSet="Beige_Black_Alpha" Font="TwCenMT22" FontStyle="Shadow" Name="MainMenu" >
+
+	<Instance Name="Menu">
+		<Container ID="Container" Anchor="C,T" >
+			<Label ID="Label" Style="MenuTitleCaption" Anchor="C,T" />
+			<Stack ID="Stack" Anchor="C,T" Offset="0,60" Size="320,1" StackGrowth="Bottom" />
+		</Container>
+	</Instance>
+
+	<Instance Name="MenuButton320">
+		<GridButton ID="Button" Size="320,45" >
+			<GridData Style="Grid9FrameTurnsButton" />
+			<ShowOnMouseOver>
+				<AlphaAnim Size="320,48" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="1.5" AlphaEnd="1">
+					<Grid Size="320,48" Offset="0,-2" Style="Grid9FrameTurnsHL" />
+				</AlphaAnim>
+				<AlphaAnim Size="320,48" Pause="0" Cycle="Once" Speed="1" AlphaStart=".2" AlphaEnd="0">
+					<Image Anchor="R,C" AnchorSide="O.I" Texture="WindowGlowRight.dds" Size="42,86" />
+					<Image Anchor="L,C" AnchorSide="O.I" Texture="WindowGlowLeft.dds" Size="42,86" />
+				</AlphaAnim>
+			</ShowOnMouseOver>
+			<Image ID="Trim" Anchor="C,T" AnchorSide="I.O" Texture="bar300x2.dds" Size="300.1" />
+		</GridButton>
+	</Instance>
+
+	<Instance Name="MenuSpacer320">
+		<Container Size="320,45" />
+	</Instance>
+
+	<!-- Version Information -->
+	<Label ID="VersionNumber" Anchor="C,B" Offset="0,12" Font="TwCenMT16"/>
+	<Button ID="TouchHelpButton" Anchor="R,B" Size="128,128" TextureOffset="384,128" ToolTip="TXT_KEY_TOUCH_HELP" Texture="Civ5_TouchIconAtlas_128.dds" NoStateChange="1" Hidden="1" />
+
+	<Grid ID="MenuContainer" Size="480,480" Anchor="C,C" Offset="0.32" Style="Grid9Detail140" ConsumeMouse="1" Hidden="1">
+		<Box Color="Black.200" Anchor="C,T" Offset="0.44" Size="320.393" >
+			<Grid Size="48,393" Anchor="L,T" AnchorSide="O.I" Style="WindowGrid" />
+			<Grid Size="48,393" Anchor="R,T" AnchorSide="O.I" Style="WindowGrid" />
+		</Box>
+		<Image Anchor="C,T" Offset="0,-33" AnchorSide="O.O" Texture="topframe.dds" Size="512,128" />
+		<Image Anchor="C,B" Offset="0,-109" AnchorSide="O.O" Texture="bottomframe.dds" Size="512,128" />
+
+		<AlphaAnim ID="FadeIn" AlphaStart="0" Cycle="Once" AlphaEnd="1" Pause="0" Speed="4" Anchor="C,T" />
+
+		<Image Anchor="C,T" Offset="-184,44" Texture="WindowTrimLeft.dds" Size="98,394" />
+		<Image Anchor="C,T" Offset="184,44" Texture="WindowTrimRight.dds" Size="98,394" />
+	</Grid>
+
+	<!-- Child Screens -->
+	<LuaContext ID="OptionsMenu_FrontEnd" FileName="OptionsMenu" Hidden="1" DeferLoad="1" />
+	<!-- Single Player -->
+	<LuaContext ID="LoadGameScreen" FileName="LoadMenu" Hidden="1" DeferLoad="1" />
+	<LuaContext ID="LoadTutorial" FileName="LoadTutorial" Hidden="1" DeferLoad="1" />
+	<LuaContext ID="ScenariosScreen" FileName="ScenariosMenu" Hidden="1" DeferLoad="1" />
+	<LuaContext ID="AdvancedSetup" FileName="AdvancedSetup" Hidden="1" DeferLoad="1" />
+	<!-- Multi Player -->
+	<LuaContext ID="LobbyScreen" FileName="Lobby" Hidden="1" DeferLoad="1" />
+	<LuaContext ID="MPGameSetupScreen" FileName="MPGameSetupScreen" Hidden="1" DeferLoad="1"/>
+	<LuaContext ID="JoinScreen" FileName="JoiningRoom" Hidden="1" DeferLoad="1" />
+	<LuaContext ID="StagingRoomScreen" FileName="StagingRoom" DeferLoad="1" Hidden="1" DeferLoad="1" />
+	<!-- Modding -->
+	<LuaContext ID="ModsBrowser" FileName="ModsBrowser" Hidden="1" DeferLoad="1" />
+	<LuaContext ID="ModsCustom" FileName="CustomMod" Hidden="1" DeferLoad="1" />
+	<LuaContext ID="ModdingGameSetupScreen" FileName="GameSetupScreen" Hidden="1" DeferLoad="1" />
+	<!-- Other -->
+	<LuaContext ID="LatestNews" FileName="LatestNews" Hidden="1" DeferLoad="1"/>
+	<LuaContext ID="Civilopedia" FileName="CivilopediaScreen" Hidden="1" DeferLoad="1"/>
+	<LuaContext ID="HallOfFame" FileName="HallOfFame" Hidden="1" DeferLoad="1" />
+	<LuaContext ID="Leaderboard" FileName="Leaderboard" Hidden="1" DeferLoad="1" />
+	<LuaContext ID="LoadReplayMenu" FileName="LoadReplayMenu" Hidden="1" DeferLoad="1" />
+	<LuaContext ID="Credits" FileName="Credits" Hidden="1" DeferLoad="1" />
+	<LuaContext ID="PremiumContentScreen" FileName="PremiumContentMenu" Hidden="1" DeferLoad="1" />
+	<LuaContext ID="DedicatedServerScreen" FileName="DedicatedServer" Hidden="1" DeferLoad="1" />
+	<LuaContext ID="TouchControlsMenu" FileName="TouchControlsMenu" Hidden="1" DeferLoad="1" />
+	<LuaContext ID="ReplayViewer" FileName="ReplayViewer" Hidden="1" DeferLoad="1"/>
+	<LuaContext ID="HotSeat" FileName="HotSeat" Hidden="1" DeferLoad="1"/>
+
+</Context>

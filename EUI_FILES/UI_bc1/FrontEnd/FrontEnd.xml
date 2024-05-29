@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context Name="FrontEnd">
+
+	<Button ID="Button" Size="F.F"/>
+	<AlphaAnim ID="Timer" Speed="0.1" Pause="0" Cycle="Bounce" Stopped="1" />
+	<AlphaAnim ID="FadeIn" Size="F.F" AlphaStart="0" AlphaEnd="1" Pause="0" Cycle="Once" Speed="1" Stopped="1" >
+		<Image ID="AtlasLogo" Anchor="C,C" Sampler="Linear" />
+	</AlphaAnim>
+	<Image ID="Civ5Logo" Anchor="R,T" />
+
+	<LuaContext ID="MainMenu" FileName="MainMenu" Hidden="1" />
+	<LuaContext ID="ContentSwitch" FileName="ContentSwitch" Hidden="1" />
+	<LuaContext FileName="FrontEndPopup" Hidden="1" />
+	<LuaContext FileName="ExitConfirm" Hidden="1" />
+</Context>

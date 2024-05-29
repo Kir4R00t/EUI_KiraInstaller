@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context ColorSet="Beige_Black_Alpha" Font="TwCenMT22" FontStyle="Shadow" Name="MainMenu" >
+
+	<Box Color="Black.128" Size="Full.Full" ID="ExitConfirm" ConsumeMouseOver="1" >
+		<Grid Size="500,400" Anchor="C,C" Padding="0,20" Style="Grid9DetailFive140"  >
+			<Box Style="PopupLeftSideTreatment"/>
+			<Box Style="PopupRightSideTreatment"/>
+			<Box Style="PopupNotificationTopTreatment"/>
+			<Stack Anchor="C,T"  Offset="0,74" Padding="24" StackGrowth="Bottom" ID="ButtonStack">
+				<Label ID="Message" WrapWidth="440" String="TXT_KEY_MENU_EXIT_WARN" Font="TwCenMT22" ColorSet="Beige_Black_Alpha" FontStyle="Shadow"  />
+				<GridButton Style="BaseButton"  ID="ExitToMain" Size="400,42" Anchor="C,T" String="TXT_KEY_MENU_EXIT_TO_MAIN" ColorSet="Beige_Black" Font="TwCenMT22" FontStyle="Shadow" />
+				<GridButton Style="BaseButton"  ID="ExitToWindows" Size="400,42" Anchor="C,T" String="TXT_KEY_MENU_EXIT_TO_WINDOWS" ColorSet="Beige_Black" Font="TwCenMT22" FontStyle="Shadow" />
+				<GridButton  Style="BaseButton" ID="ReturnToGame" Size="400,42" Anchor="C,T" String="TXT_KEY_MENU_RETURN_TO_GAME" ColorSet="Beige_Black" Font="TwCenMT22" FontStyle="Shadow" />
+			</Stack>
+		</Grid>
+	</Box>
+
+</Context>

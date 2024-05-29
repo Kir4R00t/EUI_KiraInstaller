@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context>
+
+	<Button ID="TheBox" Size="Full,Full" Disabled="1" ConsumeMouse="0" />
+
+	<ToolTipType Name="PlotHelpToolTip" >
+		<Grid ID="Grid" Padding="8,8" Style="GridBlack8" Color="White,240" >
+			<Label ID="Text" Anchor="C,C" ColorSet="Beige_Black" FontStyle="Shadow" Font="TwCenMT16" />
+		</Grid>
+	</ToolTipType>
+
+</Context>
