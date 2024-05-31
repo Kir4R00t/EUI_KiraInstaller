@@ -1,7 +1,9 @@
 import os
 import shutil
 import tkinter as tk
+import string
 from tkinter import messagebox
+
 
 def find_game_directory():
     game_folder = "Sid Meier's Civilization V"
